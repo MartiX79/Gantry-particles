@@ -1,0 +1,23 @@
+name: ACF
+description:
+type: particle
+icon: fa-list-alt
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    field.name:
+      type: input.text
+      label: Custom field name
+      description: Custom field-name
+
+
+    css.class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.

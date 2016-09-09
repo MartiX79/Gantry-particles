@@ -1,0 +1,11 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set post = TimberPost(post) %}
+
+{% block particle %}
+  <div class="custom-field {{ particle.css.class }}">
+
+         {{post.get_field(particle.field.name)|raw }}
+
+
+  </div>
+{% endblock %}
