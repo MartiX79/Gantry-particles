@@ -2,10 +2,9 @@
 {% set post = TimberPost(post) %}
 
 {% block particle %}
-  <div class="custom-field {{ particle.css.class }}">
-
-         {{post.get_field(particle.field.name)|raw }}
-
-
-  </div>
+    {% if post.get_field(particle.field.name)  %}
+      <div class="custom-field {{ particle.css.class }}">
+             {{post.get_field(particle.field.name)|raw }}
+      </div>
+    {% endif %}
 {% endblock %}
